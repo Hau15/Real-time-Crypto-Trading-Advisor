@@ -3,7 +3,7 @@ import time
 from kafka import KafkaProducer
 import websocket
 
-# Cấu hình Kafka
+# Cấu hình cua Kafka
 producer = KafkaProducer(
     bootstrap_servers=['localhost:9092'],
     value_serializer=lambda x: json.dumps(x).encode('utf-8')
